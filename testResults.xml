@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="12" errors="0" failures="3" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2026-03-21" time="19:11:56">
+  <environment user="charles.cantrell" clr-version="9.0.10" nunit-version="2.5.8.0" os-version="10.0.26200" cwd="D:\repositories\cocloud\sun-n-fun-scheduler" user-domain="COCLOUD" machine-name="COCLOUD-RON01" platform="Microsoft Windows 11 Enterprise|C:\WINDOWS|\Device\Harddisk0\Partition1" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Failure" success="False" time="2.9953" asserts="0" description="Pester">
+    <results>
+      <test-suite type="TestFixture" name="D:\repositories\cocloud\sun-n-fun-scheduler\Tests\Repository.Tests.ps1" executed="True" result="Failure" success="False" time="2.9953" asserts="0" description="D:\repositories\cocloud\sun-n-fun-scheduler\Tests\Repository.Tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="Repository script quality" executed="True" result="Failure" success="False" time="1.3182" asserts="0" description="Repository script quality">
+            <results>
+              <test-case description="keeps the Windows launcher in STA mode" name="Repository script quality.keeps the Windows launcher in STA mode" time="0.0572" asserts="0" success="False" result="Failure" executed="True">
+                <failure>
+                  <message>ParameterBindingValidationException: Cannot bind argument to parameter 'Path' because it is null.</message>
+                  <stack-trace>at &lt;ScriptBlock&gt;, D:\repositories\cocloud\sun-n-fun-scheduler\Tests\Repository.Tests.ps1:22</stack-trace>
+                </failure>
+              </test-case>
+              <test-suite type="ParameterizedTest" name="Repository script quality.parses each PowerShell entry script without syntax errors" executed="True" result="Success" success="True" time="0.8614" asserts="0" description="parses each PowerShell entry script without syntax errors">
+                <results>
+                  <test-case description="parses each PowerShell entry script without syntax errors" name="Repository script quality.parses each PowerShell entry script without syntax errors()" time="0.8549" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="parses each PowerShell entry script without syntax errors" name="Repository script quality.parses each PowerShell entry script without syntax errors()" time="0.0033" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="parses each PowerShell entry script without syntax errors" name="Repository script quality.parses each PowerShell entry script without syntax errors()" time="0.0031" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Repository data integrity" executed="True" result="Failure" success="False" time="1.5556" asserts="0" description="Repository data integrity">
+            <results>
+              <test-case description="stores the expected day fields in the seed dataset" name="Repository data integrity.stores the expected day fields in the seed dataset" time="0.027" asserts="0" success="False" result="Failure" executed="True">
+                <failure>
+                  <message>ParameterBindingValidationException: Cannot bind argument to parameter 'Path' because it is null.</message>
+                  <stack-trace>at &lt;ScriptBlock&gt;, D:\repositories\cocloud\sun-n-fun-scheduler\Tests\Repository.Tests.ps1:50</stack-trace>
+                </failure>
+              </test-case>
+              <test-case description="stores the expected assignment fields in the seed dataset" name="Repository data integrity.stores the expected assignment fields in the seed dataset" time="0.0283" asserts="0" success="False" result="Failure" executed="True">
+                <failure>
+                  <message>ParameterBindingValidationException: Cannot bind argument to parameter 'Path' because it is null.</message>
+                  <stack-trace>at &lt;ScriptBlock&gt;, D:\repositories\cocloud\sun-n-fun-scheduler\Tests\Repository.Tests.ps1:62</stack-trace>
+                </failure>
+              </test-case>
+              <test-suite type="ParameterizedTest" name="Repository data integrity.loads each schedule JSON file successfully" executed="True" result="Success" success="True" time="0.0957" asserts="0" description="loads each schedule JSON file successfully">
+                <results>
+                  <test-case description="loads each schedule JSON file successfully" name="Repository data integrity.loads each schedule JSON file successfully()" time="0.0916" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="loads each schedule JSON file successfully" name="Repository data integrity.loads each schedule JSON file successfully()" time="0.0041" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="ParameterizedTest" name="Repository data integrity.contains the required top-level properties in each schedule file" executed="True" result="Success" success="True" time="0.0461" asserts="0" description="contains the required top-level properties in each schedule file">
+                <results>
+                  <test-case description="contains the required top-level properties in each schedule file" name="Repository data integrity.contains the required top-level properties in each schedule file()" time="0.0415" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="contains the required top-level properties in each schedule file" name="Repository data integrity.contains the required top-level properties in each schedule file()" time="0.0046" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="ParameterizedTest" name="Repository data integrity.contains at least one day and one assignment in each schedule file" executed="True" result="Success" success="True" time="0.0337" asserts="0" description="contains at least one day and one assignment in each schedule file">
+                <results>
+                  <test-case description="contains at least one day and one assignment in each schedule file" name="Repository data integrity.contains at least one day and one assignment in each schedule file()" time="0.0297" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="contains at least one day and one assignment in each schedule file" name="Repository data integrity.contains at least one day and one assignment in each schedule file()" time="0.004" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

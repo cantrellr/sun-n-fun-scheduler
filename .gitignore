@@ -1,0 +1,31 @@
+# OS-generated files
+Thumbs.db
+Desktop.ini
+
+# Editor and workspace files
+.idea/
+.vs/
+*.code-workspace
+
+# PowerShell and logging artifacts
+*.clixml
+*.history.txt
+*.log
+*.tmp
+*.bak
+*.orig
+logs/
+transcripts/
+
+# Excel temporary files
+~$*.xlsx
+
+# Generated exports
+exports/*.csv
+exports/*.html
+exports/*.xlsx
+TestResults/
+
+# Local environment files
+.env
+.env.*
